@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: #6700ac;
+    --main-color-transparent: #49007af1;
+    --shadow: rgba(0, 0, 0, 0.753);
+}
+
+.hide {
+    display: none;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player {
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-transparent);
+    gap: 10px;
+}
+
+#music-cover {
+    width: 300px;
+    height: 300px;
+}
+
+.description {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description h2{
+    margin-bottom: 5px;
+}
+
+.description h2, i{
+    color: white;
+}
+
+.bar {
+    width: 300px;
+    height: 6px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.bar progress {
+    width: 0%;
+    height: 6px;
+    background-color: white;
+}
+
+.bar .point {
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.music-time {
+    width: 98%;
+    padding-left: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 13px;
+}
+
+.play-buttons button{
+    background-color: transparent;
+    color: white;
+    border-radius: 200px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.play-buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.185);
+    transition: 0.6s;
+}
+
+.play-buttons svg {
+    width: 50px;
+}
